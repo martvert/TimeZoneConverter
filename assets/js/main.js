@@ -124,18 +124,28 @@
         switch (citiesList.value) {
             case 'SanFrancisco':
                 newTimehours = hours - 9;
+                console.log(newTimehours);
+                console.log(hours);
                 break;
             case 'Pyongyang':
-                newTimehours = hours + 7;
+                newTimehours = Number (hours) + 7;
+                console.log(newTimehours);
+                console.log(hours);
                 break;
             case 'Sidney':
-                newTimehours = hours + 8;
+                newTimehours = Number (hours) + 8;
+                console.log(newTimehours);
+                console.log(hours);
                 break;
             case 'MexicoCity':
                 newTimehours = hours - 7;
+                console.log(newTimehours);
+                console.log(hours);
                 break;
             case 'Marrakesh':
                 newTimehours = hours - 2;
+                console.log(newTimehours);
+                console.log(hours);
                 break;
             default:
                 newTimehours = date.getHours();
