@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Time Zone Converter</title>
+        <link rel="icon" type="image/png" href="assets/img/watch-icon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="form-row mt-5">
+                <div class="col-md-5">
+                    <img src="assets/img/watch-icon.png" alt="watch icon">
+                </div>
+                <div class="col-md-6 buttons">
+                    <button data-lang="en" class="btn btn-uk mr-1"></button>
+                    <button data-lang="de" class="btn btn-de mr-1"></button>
+                    <button data-lang="it" class="btn btn-it mr-1"></button>
+                    <button data-lang="es" class="btn btn-es mr-1"></button>
+                </div>
+            </div>
+            <h1 id="title" class="mt-5">Time Zone Converter</h1>
+            <div class="form-row mt-5">
+                <div class="form-group col-md-7">
+                     <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="12-24-hour-clock" id="twelve" value="12">
+                            <label class="form-check-label" for="twelve" id="twelve-label">12 Hour Clock</label>
+                        </div>
+                         <div class="form-check form-check-inline">
+                             <input class="form-check-input" type="radio" name="12-24-hour-clock" id="twenty-four" value="24" checked>
+                            <label class="form-check-label" for="twenty-four" id="twenty-four-label">24 Hour Clock</label>
+                        </div>
+                </div>
+            </div>
+            <div class="form-row mt-5">
+                <div class="form-group col-md-5 mr-3">
+                    <label id="localTimeLabel"> Local time in Berlin: </label>
+                    <input type="text" name="local-time" readonly class="form-control">          
+                </div>
+                <div class="form-group col-md-6">
+                    <label id="localTimeSelectLabel">Local time in</label> 
+                    <select id="cities">
+                        <option value="" id="localTimeSelect">select city</option>
+                        <option value="SanFrancisco">San Francisco</option>
+                        <option value="Pyongyang">Pyongyang</option>
+                        <option value="Sidney">Sidney</option>
+                        <option value="MexicoCity">Mexico City</option>
+                        <option value="Marrakesh">Marrakesh</option>
+                    </select>
+                    <input type="text" name="new-zone-time" readonly class="form-control">                   
+                </div> 
+            </div>
+        </div>       
+    </body>
+</html>

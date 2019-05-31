@@ -1,0 +1,25 @@
+.buttons {
+    text-align: right;
+}
+
+.btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.btn-uk {
+    background-image: url('../img/united-kingdom.png');
+}
+
+.btn-de {
+    background-image: url('../img/germany.png');
+}
+
+.btn-it {
+    background-image: url('../img/italy.png');
+}
+
+.btn-es {
+    background-image: url('../img/spain.png');
+}
