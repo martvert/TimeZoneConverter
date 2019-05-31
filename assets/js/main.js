@@ -29,7 +29,7 @@
     languages.it.formatTwentyFour = 'Formato 24 ore';
     languages.it.localTimeLabel = 'Ora corrente a Berlino';
     languages.it.localTimeSelectLabel = 'Ora corrente a';
-    languages.it.localTimeSelect = 'Selezionare città';
+    languages.it.localTimeSelect = 'selezionare città';
 
     languages.es = {};
     languages.es.title = 'Conversor horario';
@@ -103,6 +103,7 @@
     /**
      * Showing the time for both local time zone (Berlin) 
      * and, if selected, for the selected city
+     * 
      * @returns {undefined}
      */
     
@@ -124,28 +125,18 @@
         switch (citiesList.value) {
             case 'SanFrancisco':
                 newTimehours = hours - 9;
-                console.log(newTimehours);
-                console.log(hours);
                 break;
             case 'Pyongyang':
                 newTimehours = Number (hours) + 7;
-                console.log(newTimehours);
-                console.log(hours);
                 break;
             case 'Sidney':
                 newTimehours = Number (hours) + 8;
-                console.log(newTimehours);
-                console.log(hours);
                 break;
             case 'MexicoCity':
                 newTimehours = hours - 7;
-                console.log(newTimehours);
-                console.log(hours);
                 break;
             case 'Marrakesh':
                 newTimehours = hours - 2;
-                console.log(newTimehours);
-                console.log(hours);
                 break;
             default:
                 newTimehours = date.getHours();
