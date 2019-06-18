@@ -187,9 +187,7 @@
         if (twelveHourClock.checked) {
             switch (true) {
                 case currentHours > 12:
-                    currentHours -= 12;
-                    currentHours = addZero(currentHours);
-                    time = currentHours + ':' + minutes + ':' + seconds + ' PM';
+                    time = addZero(currentHours % 12) + ':' + minutes + ':' + seconds + ' PM';
                     break;
                 case currentHours === 12:
                     time = currentHours + ':' + minutes + ':' + seconds + ' PM';
