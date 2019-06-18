@@ -143,7 +143,7 @@
                 break;
         }
 
-        if (newTimehours > 24) {
+        if (newTimehours >= 24) {
             newTimehours -= 24;
         } else if (newTimehours < 0) {
             newTimehours = 24 + newTimehours;
